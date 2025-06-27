@@ -8,19 +8,20 @@
       margin: 0;
       padding: 0;
       background-color: #000;
-      height: 100%;
-      font-family: sans-serif;
       color: white;
+      font-family: sans-serif;
+      height: 100%;
       overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     .rainbow-text {
       font-size: 32px;
       font-weight: bold;
-      text-align: center;
       margin-top: 20px;
       animation: spin 10s linear infinite, rainbow 5s linear infinite;
-      display: block;
     }
 
     @keyframes spin {
@@ -39,21 +40,33 @@
     }
 
     .center {
+      flex: 1;
       display: flex;
       flex-direction: column;
-      align-items: center;
       justify-content: center;
-      height: calc(100% - 80px);
+      align-items: center;
     }
 
     .icon-img {
       width: 100px;
-      height: auto;
       margin: 20px;
       transition: transform 0.3s ease;
     }
 
     .icon-img:hover {
+      transform: scale(1.1);
+    }
+
+    .discord-link {
+      margin-bottom: 30px;
+    }
+
+    .discord-img {
+      width: 60px;
+      transition: transform 0.3s ease;
+    }
+
+    .discord-img:hover {
       transform: scale(1.1);
     }
   </style>
@@ -62,11 +75,14 @@
   <div class="rainbow-text">nikoniko website</div>
 
   <div class="center">
-    <!-- PythonとJavaScriptの代替アイコン画像を表示 -->
     <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python" class="icon-img">
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript" class="icon-img">
   </div>
+
+  <div class="discord-link">
+    <a href="https://discord.gg/ozeu" target="_blank" title="Join Discord">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Discord_logo.svg" alt="Discord" class="discord-img">
+    </a>
+  </div>
 </body>
 </html>
-
-  
