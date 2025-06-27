@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>好きな言語</title>
+  <title>nikoniko website</title>
   <!-- Font Awesome CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
@@ -11,34 +11,58 @@
       padding: 0;
       height: 100%;
       background-color: #000;
+      color: white;
+      font-family: sans-serif;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px 0;
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .content {
       display: flex;
       justify-content: center;
       align-items: center;
-      font-family: sans-serif;
+      height: calc(100% - 60px); /* header分の高さを引く */
     }
+
     .icons {
       text-align: center;
     }
+
     .icon {
       font-size: 100px;
       margin: 40px;
       transition: transform 0.2s ease;
     }
+
     .icon:hover {
       transform: scale(1.1);
     }
+
     .python {
       color: #3472a5;
     }
+
     .js {
       color: #f7df1e;
     }
   </style>
 </head>
 <body>
-  <div class="icons">
-    <i class="fab fa-python icon python" title="Python"></i>
-    <i class="fab fa-js icon js" title="JavaScript"></i>
+  <header>nikoniko website</header>
+
+  <div class="content">
+    <div class="icons">
+      <i class="fab fa-python icon python" title="Python"></i>
+      <i class="fab fa-js icon js" title="JavaScript"></i>
+    </div>
   </div>
 </body>
 </html>
+
+  
