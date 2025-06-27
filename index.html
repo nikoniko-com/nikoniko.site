@@ -3,17 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <title>nikoniko website</title>
-  <!-- Font Awesome CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     html, body {
       margin: 0;
       padding: 0;
       background-color: #000;
-      color: #fff;
       height: 100%;
-      overflow: hidden;
       font-family: sans-serif;
+      color: white;
+      overflow: hidden;
     }
 
     .rainbow-text {
@@ -26,7 +24,7 @@
     }
 
     @keyframes spin {
-      0% { transform: rotate(0deg); }
+      0%   { transform: rotate(0deg); }
       100% { transform: rotate(360deg); }
     }
 
@@ -42,27 +40,20 @@
 
     .center {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      height: calc(100% - 80px);
       flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: calc(100% - 80px);
     }
 
-    .icon {
-      font-size: 100px;
+    .icon-img {
+      width: 100px;
+      height: auto;
       margin: 20px;
-      transition: transform 0.2s ease;
+      transition: transform 0.3s ease;
     }
 
-    .python {
-      color: #3472a5;
-    }
-
-    .js {
-      color: #f7df1e;
-    }
-
-    .icon:hover {
+    .icon-img:hover {
       transform: scale(1.1);
     }
   </style>
@@ -71,8 +62,11 @@
   <div class="rainbow-text">nikoniko website</div>
 
   <div class="center">
-    <i class="fab fa-python icon python" title="Python"></i>
-    <i class="fab fa-js icon js" title="JavaScript"></i>
+    <!-- PythonとJavaScriptの代替アイコン画像を表示 -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python" class="icon-img">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript" class="icon-img">
   </div>
 </body>
 </html>
+
+  
